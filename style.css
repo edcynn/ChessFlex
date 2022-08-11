@@ -11,33 +11,28 @@ body {
   background-repeat: no-repeat;
 }
 
-#title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(238, 230, 230, 0.3);
-  height:50px;
-  width: 50%;
-  margin: 50px auto;
-}
-
-#title:hover {
-  background-color: rgba(12, 10, 10, 0.3);
-}
-
 .container {
-  margin: 50px 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid rgb(83, 65, 65) 10px;
+  border-style: groove;
 }
 
-p {
+#align {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
   font-family:cursive;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: greenyellow;
+  margin: 50px auto;
 }
 
 .picsize {
@@ -61,7 +56,6 @@ p {
   background-color: rgb(89, 207, 207);
   height: 80px;
   width: 80px;
- 
 }
 
 .tilesB:hover {
@@ -75,7 +69,6 @@ p {
 #h1, #h3, #h4, #h5, #h7, #i1, #i3 {
   animation-name: colorgreen;
   animation-duration: 3s;
-
 }
 
 @keyframes colorgreen {
