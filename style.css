@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('bg.gif');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 230, 230, 0.3);
+  height:50px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+#title:hover {
+  background-color: rgba(12, 10, 10, 0.3);
+}
+
+.container {
+  margin: 50px 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family:cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: greenyellow;
+}
+
+.picsize {
+  height: 80px;
+  width: 80px;
+  display: block;
+  max-width: 100%;
+}
+
+.tilesA {
+  background-color: rgb(180, 182, 52);
+  height: 80px;
+  width: 80px;
+}
+
+.tilesA:hover {
+  background-color: rgb(189, 250, 48)
+}
+
+.tilesB {
+  background-color: rgb(89, 207, 207);
+  height: 80px;
+  width: 80px;
+ 
+}
+
+.tilesB:hover {
+  background-color: rgb(7, 245, 245);
+}
+
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .sixthrow, .seventhrow, .eightrow {
+  display: flex;
+}
+
+#h1, #h3, #h4, #h5, #h7, #i1, #i3 {
+  animation-name: colorgreen;
+  animation-duration: 3s;
+
+}
+
+@keyframes colorgreen {
+  from {background-color: rgb(180, 182, 52);}
+  to {background-color: orangered;}
+}
+
+#h2, #h6, #i2 {
+  animation-name: colorblue;
+  animation-duration: 3s;
+}
+
+@keyframes colorblue {
+  from {background-color: rgb(89, 207, 207);}
+  to {background-color: orangered;}
+}
+
+
